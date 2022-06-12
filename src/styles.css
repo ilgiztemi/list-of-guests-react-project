@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  min-height: 100vh;
+  width: 100vw;
+  color: #101010;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  overflow-y: scroll;
+}
+.img {
+  opacity: 0.4;
+  position: absolute;
+  width: 100vw;
+  z-index: -1;
+  height: 100vh;
+}
+.App h1 {
+  text-shadow: 5px 5px 10px;
+  text-align: center;
+  margin: 30px;
+}
+.form-input {
+  width: 300px;
+  padding-left: 10px;
+  line-height: 35px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.submitBtn {
+  background-color: #84a784;
+  font-size: 18px;
+  padding: 7px 20px;
+  margin-left: 5px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.submitBtn:hover {
+  background-color: white;
+  color: #84a784;
+  cursor: pointer;
+}
+.editBtn,
+.deleteBtn {
+  background-color: #84a784;
+  font-size: 15px;
+  padding: 7px 10px;
+  margin-left: 5px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.editBtn:hover {
+  background-color: white;
+  color: #84a784;
+  cursor: pointer;
+}
+.deleteBtn:hover {
+  background-color: white;
+  color: #84a784;
+  cursor: pointer;
+}
+.form {
+  text-align: center;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.card {
+  border: 2px solid #008080;
+  box-shadow: 3px 3px 7px;
+  min-height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  animation: size 2s ease-in-out;
+}
+@keyframes size {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.name {
+  text-align: center;
+}
+.name-input {
+  display: block;
+  margin: 0 auto 5px auto;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.confirmed {
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin: 20px;
+  text-shadow: 5px 5px 25px;
+}
+.label,
+.checkboxBtn,
+.editBtn,
+.deleteBtn {
+  margin: 5px;
+}
