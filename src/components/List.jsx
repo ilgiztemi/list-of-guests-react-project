@@ -1,6 +1,5 @@
 import { useContext, useEffect } from "react";
 import { GuestsContext } from "../context/Context";
-// import Name from "./Name";
 
 const List = () => {
   const {
